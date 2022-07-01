@@ -146,8 +146,10 @@ uniq(names, uniqArr => console.log(`The new names array with all the duplicate i
 */
 
 // CODE HERE 
-//let each = (array,callback)=> array.forEach( => c){
-//console.log(names)
+
+//inline call back  function
+let each = (array,callback)=> array.forEach((element,index)=> callback(element,index))
+console.log(names)
 /*
   Invoke the each function, passing in the names array and a callback function.
   The callback function should take in two parameters, item and index.
@@ -156,9 +158,7 @@ uniq(names, uniqArr => console.log(`The new names array with all the duplicate i
 */
 
 // CODE HERE
-//each(names,(item,index)=> 'The item at index ${index} is ${item}.')
-
-
+each(names,(item,index)=> console.log(`The item at index ${index} is ${item}.`))
 
 ////////// PROBLEM 7 //////////
 
